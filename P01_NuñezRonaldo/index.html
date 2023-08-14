@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODY</title>
+    <style>
+        header {
+            background-color: #ffdf00;
+            color: rgb(2, 2, 2);
+            padding: 20px 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .logo {
+            height: 150px;
+            width: 150px;
+        }
+
+        h5 {
+            margin: 0;
+            font-size: 45px;
+        }
+        
+    </style>
+</head>
+<body>
+    <style>
+        .menu-item {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-item img {
+            height: 80px;
+            width: 100px;
+            max-width: 100px;
+            margin-right: 10px;
+        }
+
+        .order-form {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .order-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .order-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .order-form button {
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .menu-category {
+            width: calc(50% - 20px);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .menu-category h3 {
+            margin-top: 0;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .menu-item img {
+            height: 80px;
+            width: 100px;
+            max-width: 100px;
+            margin-right: 20px;
+        }
+
+        footer {
+            background-color: #ffdf00;
+            color: rgb(6, 6, 6);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-content p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            line-height: 30px;
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+        }     
+        
+        .video-description {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .video-description iframe {
+            max-width: 560px;
+            height: 315px;
+            margin-right: 20px;
+        }
+    </style>
+    <header>
+        <img src="FOddy.png" alt="Logo FOODY" class="logo">
+        <h5>¡Tu sabor favorito en cada mordisco!</h5>
+        <nav class="nav-links">
+            <a href="#">Menú</a>
+            <a href="#">Especiales</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Menú</h2>
+        <div class="menu-item">
+            <div class="menu-category">
+                <h3>Hamburguesas</h3>
+                <ul>
+                    <li>
+                        <div class="menu-item">
+                            <img src="hamburguesa clasica.jpg" alt="Hamburguesa clásica">
+                            <div>
+                                <h4>Hamburguesa Clásica</h4>
+                                <p>Con carne a la parrilla, lechuga, tomate y queso.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <img src="hamburguesa tocino.jpg" alt="Hamburguesa con tocino">
+                            <div>
+                                <h4>Hamburguesa con tocino</h4>
+                                <p>Con carne a la parrilla, lechuga, tomate, queso americano y tocino.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <h3>Postres</h3>
+                <ul>
+                    <li>
+                        <div class="menu-item">
+                            <img src="malteada.jpg" alt="Malteada">
+                            <div>
+                                <h4>Malteada</h4>
+                                <p>Deliciosa malteada de distintos sabores con crema batida.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <img src="helado.jpg" alt="Helado">
+                            <div>
+                                <h4>Helado</h4>
+                                <p>Delicioso helado de fresa, vainilla y chocolate.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <h3>Acompañantes</h3>
+                <ul>
+                    <li>
+                        <div class="menu-item">
+                            <img src="papas.jpg" alt="Papas fritas">
+                            <div>
+                                <h4>Papas Fritas</h4>
+                                <p>Crujientes papas fritas con un toque de sal.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <img src="nuggets.jpg" alt="Nuggets">
+                            <div>
+                                <h4>Nuggets de pollo</h4>
+                                <p>Crujientes por fuera y suaves por dentro</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <h3>Bebidas</h3>
+                <ul>
+                    <li>
+                        <div class="menu-item">
+                            <img src="refresco.jpg" alt="Refresco">
+                            <div>
+                                <h4>Refresco</h4>
+                                <p>Refrescante bebida carbonatada disponible en varios sabores.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <img src="tehelado.jpg" alt="Te helado">
+                            <div>
+                                <h4>Té helado</h4>
+                                <p>Té helado, dulce y refrescante a la vez</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Comida Especial por Tiempo Limitado</h2>
+        <div class="menu-item">
+            <img src="hamburguesatriple.webp" alt="Hamburguesa Triple">
+            <div>
+                <h3>Hamburguesa Triple</h3>
+                <p>¡El delicioso sabor de una hamburguesa pero ahora con triple carne! <q cite="https://www.contextoganadero.com/cronica/el-origen-de-la-hamburguesa">Una de las comidas rápidas más consumidas en el mundo es la hamburguesa, de la que existen tantas variedades como regiones hay en el mundo.</p></q>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="curly.jpg" alt="Papas Fritas Curly">
+            <div>
+                <h3>Papas Fritas Curly</h3>
+                <p>¡Una manera diferente de probar el delicioso sabor de las papa fritas! <q cite="https://sommelierdesabores.com/index.php/2023/06/02/por-que-las-papas-fritas-son-tan-tan-pero-tan-ricas/#:~:text=Grasa%3A%20Las%20papas%20fritas%20absorben,la%20sensaci%C3%B3n%20en%20la%20boca.">Las papas fritas son populares y deliciosas debido a una combinación de factores que estimulan nuestro sentido del gusto.</p></q> 
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="drpepper.png" alt="Refresco">
+            <div>
+                <h3>Refresco Dr.Pepper</h3>
+                <p>¡El rey de los refrescos americanos está aqu! <q cite="https://www.myamericanmarket.com/es/dr-pepper#:~:text=Dr%20Pepper%3A%20el%20rey%20de,la%20bebida%20americana%20por%20excelencia.">
+                    Dr Pepper es la marca de refrescos estadounidense más antigua, con su sabor único e inimitable, es la bebida americana por excelencia.</p> </q>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="galleta.jpg" alt="Postre de Chocolate">
+            <div>
+                <h3>Galleta con chocolate</h3>
+                <p>¡Prueba nuestras deliciosas galletas con chocolate antes de que se acaben! <q cite="https://expansion.mx/tendencias/2018/09/22/por-esta-razon-las-galletas-con-chispas-de-chocolate-son-tan-adictivas"> Si hay algo que no puedes parar de comer son las galletas con chocolate, son una adicción total.</p></q>
+            </div>
+        </div>
+
+        <div class="video-description">
+            <iframe width="560" height="315" src="Hamburguesa (2).mp4" frameborder="0" allowfullscreen></iframe>
+            <p>Descubre más sobre nuestra comida especial en este emocionante video.</font-size></p>
+        </div>
+        <!-- Información y elementos relacionados con la comida especial... -->
+    </section>
+
+    <section>
+        <h2>Pedido a Domicilio</h2>
+    <div class="order-form">
+        <form>
+            <ol>
+                <li>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </li>
+                <li>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" required>
+                </li>
+                <li>
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </li>
+                <li>
+                    <label for="telefono">Número de Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </li>
+                <li>
+                    <label for="direccion">Dirección de Entrega:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </li>
+                <li>
+                    <label for="productos">Productos a Encargar:</label>
+                    <select id="productos" name="productos" multiple required>
+                        <option value="Hamburguesa clásica">Hamburguesa</option>
+                        <option value="Hamburguesa con tocino">Hamburguesa con tocino</option>
+                        <option value="Hamburguesa triple">Hamburguesa triple</option>
+                        <option value="Papas fritas">Papas Fritas</option>
+                        <option value="Nuggets">Nuggets</option>
+                        <option value="Papas fritas curly">Papas fritas curly</option>
+                        <option value="Refresco">Refresco</option>
+                        <option value="Té helado">Té helado</option>
+                        <option value="Dr Pepper">Dr Pepper</option>
+                        <option value="Malteada">Malteada</option>
+                        <option value="Helado">Helado</option>
+                        <option value="Galleta con chocolate">Galleta con chocolate</option>
+                    </select>
+                </li>
+            </ol>
+            <button type="submit">Realizar Pedido</button>
+        </form>
+    </div>
+        <!-- Formulario de contacto... -->
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 FOODY. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img weight="20px" height="20px" src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img weight="20px" height="20px" src="X.png" alt="X">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img weight="20px" height="20px" src="instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
