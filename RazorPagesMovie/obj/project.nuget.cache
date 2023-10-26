@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9FbyG01bwm9YMfS0Oam3c7lnKfkU6iRoi9rGjg6F77nnRgkWlNfynWffzqmys+KZ8aZFgKP8F9w5igfSZkgHkQ==",
+  "dgSpecHash": "8zr7cPN41vj014oXqMX2t+LMXrMx8yQeCMeDQuG28nCbDrWrlEbkIHKLfEGqJHI0wO1Cp8aPWVrfLFGztJ6oMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HUAWEI\\Desktop\\RazorPagesMovie\\RazorPagesMovie.csproj",
+  "projectFilePath": "C:\\Users\\HUAWEI\\Desktop\\Programacion-de-Aplicaciones-Web\\RazorPagesMovie\\RazorPagesMovie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HUAWEI\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\HUAWEI\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

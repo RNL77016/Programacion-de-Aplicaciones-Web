@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HUAWEI\\Desktop\\RazorPagesMovie\\RazorPagesMovie.csproj": {}
+    "C:\\Users\\HUAWEI\\Desktop\\Programacion-de-Aplicaciones-Web\\RazorPagesMovie\\RazorPagesMovie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HUAWEI\\Desktop\\RazorPagesMovie\\RazorPagesMovie.csproj": {
+    "C:\\Users\\HUAWEI\\Desktop\\Programacion-de-Aplicaciones-Web\\RazorPagesMovie\\RazorPagesMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HUAWEI\\Desktop\\RazorPagesMovie\\RazorPagesMovie.csproj",
+        "projectUniqueName": "C:\\Users\\HUAWEI\\Desktop\\Programacion-de-Aplicaciones-Web\\RazorPagesMovie\\RazorPagesMovie.csproj",
         "projectName": "RazorPagesMovie",
-        "projectPath": "C:\\Users\\HUAWEI\\Desktop\\RazorPagesMovie\\RazorPagesMovie.csproj",
+        "projectPath": "C:\\Users\\HUAWEI\\Desktop\\Programacion-de-Aplicaciones-Web\\RazorPagesMovie\\RazorPagesMovie.csproj",
         "packagesPath": "C:\\Users\\HUAWEI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HUAWEI\\Desktop\\RazorPagesMovie\\obj\\",
+        "outputPath": "C:\\Users\\HUAWEI\\Desktop\\Programacion-de-Aplicaciones-Web\\RazorPagesMovie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HUAWEI\\AppData\\Roaming\\NuGet\\NuGet.Config",
