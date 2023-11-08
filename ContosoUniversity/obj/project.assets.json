@@ -11569,19 +11569,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HUAWEI\\.nuget\\packages\\": {}
+    "C:\\Users\\jpnat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HUAWEI\\Desktop\\ContosoUniversity\\ContosoUniversity.csproj",
+      "projectUniqueName": "C:\\Users\\jpnat\\OneDrive\\Documentos\\3er semestre\\Apps Web\\3er-parcial\\practicas-3er\\practica-1\\ContosoUniversity\\ContosoUniversity.csproj",
       "projectName": "ContosoUniversity",
-      "projectPath": "C:\\Users\\HUAWEI\\Desktop\\ContosoUniversity\\ContosoUniversity.csproj",
-      "packagesPath": "C:\\Users\\HUAWEI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HUAWEI\\Desktop\\ContosoUniversity\\obj\\",
+      "projectPath": "C:\\Users\\jpnat\\OneDrive\\Documentos\\3er semestre\\Apps Web\\3er-parcial\\practicas-3er\\practica-1\\ContosoUniversity\\ContosoUniversity.csproj",
+      "packagesPath": "C:\\Users\\jpnat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jpnat\\OneDrive\\Documentos\\3er semestre\\Apps Web\\3er-parcial\\practicas-3er\\practica-1\\ContosoUniversity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HUAWEI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jpnat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

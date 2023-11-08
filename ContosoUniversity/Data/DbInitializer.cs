@@ -7,7 +7,7 @@ namespace ContosoUniversity.Data
         public static void Initialize(SchoolContext context)
         {
             // Look for any students.
-            if (context.Student.Any())
+            if (context.Students.Any())
             {
                 return;   // DB has been seeded
             }
@@ -24,7 +24,7 @@ namespace ContosoUniversity.Data
                 new Student{FirstMidName="Nino",LastName="Olivetto",EnrollmentDate=DateTime.Parse("2019-09-01")}
             };
 
-            context.Student.AddRange(students);
+            context.Students.AddRange(students);
             context.SaveChanges();
 
             var courses = new Course[]
