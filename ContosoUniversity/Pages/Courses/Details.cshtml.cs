@@ -28,13 +28,11 @@ namespace ContosoUniversity.Pages.Courses
                 return NotFound();
             }
 
-            // var course = await _context.Courses.FirstOrDefaultAsync(m => m.CourseID == id);
-            
-             var course = await _context.Courses
+            //var course = await _context.Courses.FirstOrDefaultAsync(m => m.CourseID == id);
+            var course = await _context.Courses
             .AsNoTracking()
             .Include(c => c.Department)
             .FirstOrDefaultAsync(m => m.CourseID == id);
-
             if (course == null)
             {
                 return NotFound();

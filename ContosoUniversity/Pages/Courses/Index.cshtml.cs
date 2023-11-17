@@ -18,18 +18,15 @@ namespace ContosoUniversity.Pages.Courses
         {
             _context = context;
         }
-        
 
-        public IList<Course> Courses { get; set; }
+        public IList<Course> Courses { get;set; }
 
         public async Task OnGetAsync()
         {
             if (_context.Courses != null)
             {
                 Courses = await _context.Courses
-                .Include(c => c.Department)
-                .AsNoTracking()
-                .ToListAsync();
+                .Include(c => c.Department).AsNoTracking().ToListAsync();
             }
         }
     }

@@ -30,52 +30,47 @@ namespace ContosoUniversity.Pages.Courses
                 return NotFound();
             }
 
-            // var course =  await _context.Courses.FirstOrDefaultAsync(m => m.CourseID == id);
-             var course =  await _context.Courses.Include(c => c.Department).FirstOrDefaultAsync(m => m.CourseID == id);
+            var course =  await _context.Courses.Include(c => c.Department).FirstOrDefaultAsync(m => m.CourseID == id);
             if (course == null)
             {
                 return NotFound();
             }
             Course = course;
-           ViewData["DepartmentID"] = new SelectList(_context.Departments, "DepartmentID", "DepartmentID");
+            ViewData["DepartmentID"] = new SelectList(_context.Departments, "DepartmentID", "DepartmentID");
+            //Select current DepartmentID.
             PopulateDepartmentsDropDownList(_context, Course.DepartmentID);
             return Page();
         }
 
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see https://aka.ms/RazorPagesCRUD.
-        // public async Task<IActionResult> OnPostAsync()
-        // {
-        //     if (!ModelState.IsValid)
-        //     {
-        //         return Page();
-        //     }
+        /*public async Task<IActionResult> OnPostAsync()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
 
-        //     _context.Attach(Course).State = EntityState.Modified;
+            _context.Attach(Course).State = EntityState.Modified;
 
-        //     try
-        //     {
-        //         await _context.SaveChangesAsync();
-        //     }
-        //     catch (DbUpdateConcurrencyException)
-        //     {
-        //         if (!CourseExists(Course.CourseID))
-        //         {
-        //             return NotFound();
-        //         }
-        //         else
-        //         {
-        //             throw;
-        //         }
-        //     }
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!CourseExists(Course.CourseID))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
-        //     return RedirectToPage("./Index");
-        // }
-
-        // private bool CourseExists(int id)
-        // {
-        //   return _context.Courses.Any(e => e.CourseID == id);
-        // }
+            return RedirectToPage("./Index");
+        }*/
         public async Task<IActionResult> OnPostAsync(int? id)
         {
             if (id == null)
@@ -102,6 +97,11 @@ namespace ContosoUniversity.Pages.Courses
             // Select DepartmentID if TryUpdateModelAsync fails.
             PopulateDepartmentsDropDownList(_context, courseToUpdate.DepartmentID);
             return Page();
-        }   
+        } 
+
+        private bool CourseExists(int id)
+        {
+          return _context.Courses.Any(e => e.CourseID == id);
+        }
     }
 }

@@ -48,15 +48,15 @@ namespace ContosoUniversity.Pages.Instructors
             {
                 return NotFound();
             }
-            // var instructor = await _context.Instructors.FindAsync(id);
+            /*var instructor = await _context.Instructors.FindAsync(id);
 
-            // if (instructor != null)
-            // {
-            //     Instructor = instructor;
-            //     _context.Instructors.Remove(Instructor);
-            //     await _context.SaveChangesAsync();
-            // }
-             Instructor instructor = await _context.Instructors
+            if (instructor != null)
+            {
+                Instructor = instructor;
+                _context.Instructors.Remove(Instructor);
+                await _context.SaveChangesAsync();
+            }*/
+            Instructor instructor = await _context.Instructors
                 .Include(i => i.Courses)
                 .SingleAsync(i => i.ID == id);
 

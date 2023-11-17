@@ -31,7 +31,7 @@ namespace ContosoUniversity.Pages.Students
                 return NotFound();
             }
 
-            Student = await _context.Students
+            Student = await _context.Student
                 .AsNoTracking()
                 .FirstOrDefaultAsync(m => m.ID == id);
 
@@ -55,7 +55,7 @@ namespace ContosoUniversity.Pages.Students
                 return NotFound();
             }
 
-            var student = await _context.Students.FindAsync(id);
+            var student = await _context.Student.FindAsync(id);
 
             if (student == null)
             {
@@ -64,7 +64,7 @@ namespace ContosoUniversity.Pages.Students
 
             try
             {
-                _context.Students.Remove(student);
+                _context.Student.Remove(student);
                 await _context.SaveChangesAsync();
                 return RedirectToPage("./Index");
             }
