@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ContosoUniversity.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    [Migration("20231103213406_InitialCreate")]
+    [Migration("20231110202216_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
